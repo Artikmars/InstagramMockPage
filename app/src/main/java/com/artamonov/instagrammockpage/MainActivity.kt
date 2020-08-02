@@ -3,7 +3,6 @@ package com.artamonov.instagrammockpage
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -22,10 +21,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         super.onCreate(savedInstanceState)
 
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
-
-        viewModel.postsLiveData.observe(this, Observer {
-            initAdapter()
-        })
+        initAdapter()
 
         camera_btn.setOnClickListener { showToast(R.string.camera_button_clicked) }
         instagram_logo.setOnClickListener { showToast(R.string.logo_clicked) }
@@ -53,7 +49,6 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
             override fun onItemClick(messageId: Int) {
                 showToast(messageId)
             }
-
         }
         )
 

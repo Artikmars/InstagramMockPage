@@ -11,20 +11,10 @@ class MainViewModel : ViewModel() {
 
     val postsLiveData = MutableLiveData<List<Post>>()
 
-    init {
-        postsLiveData.value = getPosts()
-    }
-
-
     fun getPosts(): MutableList<Post> {
         val list : MutableList<Post> = mutableListOf()
         list.add(firstPost)
         list.add(secondPost)
         return list
     }
-
-    fun onItemClick(messageId: Int) {
-
-    }
-
 }
