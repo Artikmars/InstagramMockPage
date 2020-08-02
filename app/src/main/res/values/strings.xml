@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">InstagramMockPage</string>
+
+    <string name="author_name_clicked">Author name clicked</string>
+    <string name="geo_tag_clicked">Geo tag clicked</string>
+    <string name="post_description_clicked">Post description clicked</string>
+    <string name="profile_image_clicked">Profile image clicked</string>
+    <string name="post_image_clicked">Post image clicked</string>
+    <string name="post_dots_clicked">Post dots clicked</string>
+    <string name="post_like_clicked">Post like clicked</string>
+    <string name="post_comment_clicked">Post comment clicked</string>
+    <string name="post_reply_clicked">Post reply clicked</string>
+    <string name="post_bookmark_clicked">Post bookmark clicked</string>
+
+    <string name="logo_clicked">Instagram logo clicked</string>
+    <string name="camera_button_clicked">Camera button clicked</string>
+    <string name="direct_messages_clicked">Direct messages clicked</string>
 </resources>
